@@ -1,0 +1,10 @@
+body > footer{
+    background-color: var(--color-header);
+    display: flex;
+    justify-content: center;align-items: center;
+    padding: 1rem .75rem;
+    width: 100vw;   
+    & p{
+        color: var(--color-primario);
+    }
+}

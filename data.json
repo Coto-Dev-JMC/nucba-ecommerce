@@ -1,0 +1,130 @@
+[
+    {
+        "id":1,
+        "nombre":"Afeitadora Eléctrica Hombre Shaver Vgr V-325",
+        "categoria":"baño",
+        "precio": 53500,
+        "descripcion": "Voltaje: 5V Funciones adicionales: afeitadora. Es inalámbrica y funciona con batería recargable. Podés utilizarla durante un tiempo máximo de 60 m. Se carga al 100% en aproximadamente 1 h. Resistente al agua y con cabezales lavables. Práctica para llevarla a todos tus viajes. Con cabezal inclinable. Accesorio incluido: 1 cable de carga.   ",
+        "imagen":"/assets/baño/afeitadora-electrica.webp"
+    },
+    {
+        "id":2,
+        "nombre":"Saphirus NBLCT-04 difusor digital aromatizador automatico 1 unidad",
+        "categoria":"baño",
+        "precio": 21515,
+        "descripcion":"Unidades por envase: 1Peso de la unidad: 300 g Unidades por pack: 1 Ideal para aromatizar tus interiores.",
+        "imagen":"/assets/baño/atomizador.webp"
+    },
+    {
+        "id":3,
+        "nombre":"Calentador Cera Depilatoria Depily 1 Kg Fundidor Profesional",
+        "categoria":"baño",
+        "precio": 38840,
+        "descripcion":"Unidades por envase: 1 Voltaje: 220V Capacidad máxima de cera: 1kg. Material del fundidor de cera: plástico. Material del pote de cera: metal. Material del filtro: metal.",
+        "imagen":"/assets/baño/calentador-cera.webp"
+    },
+    {
+        "id":4,
+        "nombre":"Depiladora Philips Bre225/00 Con Cable Cabezal Labable ",
+        "categoria":"baño",
+        "precio":10000,
+        "descripcion":"Voltaje: 220V Recomendada para cuerpo. Función: depilatoria. Con cepillo de limpieza. Cuenta con 2 velocidades. Es lavable. Disfruta de una piel suave durante semanas.",
+        "imagen":"/assets/baño/depiladora.webp"
+    },
+    {
+        "id":5,
+        "nombre":"Freidora de aire Electrolux Air Fryer EAF90 de 12L color grafito 220V",
+        "categoria":"cocina",
+        "precio":54325,
+        "descripcion":"oltaje: 220V Potencia de 1.7kW. Cuenta con temperatura ajustable entre 60°c y 200°c. Superficie antiadherente. Función incluida: freír. Dimensiones: 32.2cm de ancho, 40.9cm de alto y 37.6cm de largo. Su peso es de 6.8kg.",
+        "imagen":"/assets/cocina/air-fryer.webp"
+    },
+    {
+        "id":6,
+        "nombre":"Mixer Mini Pimmer Daewoo Dhb708s Blanco 300w Con Accesorios",
+        "categoria":"cocina",
+        "precio":46233,
+        "descripcion":"    Voltaje: 220V Potencia de 300 watts. Cuenta con 2 velocidades. Sus cuchillas son de acero inoxidable. Incluye accesorios. Apto para lavar en lavavajillas. Varilla de acero inoxidable. Con botón pulse. Pesa 2 kg. Ideal para todo tipo de preparaciones.",
+        "imagen":"/assets/cocina/mini-pimmer.webp"
+    },
+    {
+        "id":7,
+        "nombre":"Rallador Eléctrico 5 Conos Novohome Nh-sm219 250w Acero Inox",
+        "categoria":"cocina",
+        "precio":76590,
+        "descripcion":"    Potencia: 250 W Voltaje: 220V Posee traba de seguridad para evitar posibles accidentes. Sus cuchillas están fabricadas en acero inoxidable de gran resistencia y durabilidad.",
+        "imagen":"/assets/cocina/rallador-electrico.webp"
+    },
+    {
+        "id":8,
+        "nombre":"Tostadora Eléctrica 7 Niveles Decakila Kets008b 2 Rebanadas Descongela 750w",
+        "categoria":"cocina",
+        "precio":35935,
+        "descripcion":"    Voltaje: 220V Renová tus comidas y lucite en el hogar. Complemento ideal para desayunos y meriendas. Con capacidad para 2 rebanadas. Potencia de 750W. Cuenta con 7 niveles de tostado. Dispone de bandeja recoge migas.",
+        "imagen":"/assets/cocina/tostadora.webp"
+    },
+    {
+        "id":9,
+        "nombre":"Aspersor Regador Giratorio De Bronce Crossmaster 9937933",
+        "categoria":"patio",
+        "precio":23893,
+        "descripcion":"    Tiene 3 boquillas. Alcance mínimo: 1m. Alcance máximo: 9m. Es ajustable.",
+        "imagen":"/assets/patio/aspersor.webp"
+    },
+    {
+        "id":10,
+        "nombre":"Hidrolavadora Profesional 5.5hp Ducati 220 Bar 4t",
+        "categoria":"patio",
+        "precio":932657,
+        "descripcion":"    Con manguera de agua incluida. Tiene ruedas para facilitar su transporte. Apta para trabajar con agua a una temperatura máxima de 60 °C y así dejar tus superficies relucientes. Accesorio incluido.",
+        "imagen":"/assets/patio/hidro.webp"
+    },
+    {
+        "id":11,
+        "nombre":"Estaca De Jardín Solar Luz Led 5w Nexum Exterior Fotocélula",
+        "categoria":"patio",
+        "precio":21840,
+        "descripcion":"",
+        "imagen":"/assets/patio/luz-led.webp"
+    },
+    {
+        "id":12,
+        "nombre":"Parrilla Grill Eléctrica Daihatsu Antiadherente Txg-034c 5 Niveles 2000 Watts 220v Color Negro",
+        "categoria":"patio",
+        "precio":64199,
+        "descripcion":"    Voltaje: 220V Dimensiones: 57cm x 8cm x 28cm. Material de la parrilla: acero. Con medidor de temperatura. 5 niveles de temperatura. Potencia de 2kW. Pesa: 5 kg.",
+        "imagen":"/assets/patio/parrilla-electrica.webp"
+    },
+    {
+        "id":13,
+        "nombre":"Amoladora Angular Skil 9002jr Negra 700 W 220 V + Acc Color Negro",
+        "categoria":"taller",
+        "precio":42228,
+        "descripcion":"    Voltaje: 220V Potente motor de 700 W para cortes y desbastes precisos Velocidad de rotación de 11000 rpm para un trabajo eficiente Diseño angular y liviano de 1.8 kg para fácil manejo Disco de 115 mm adecuado para diversas aplicaciones Mango lateral para mayor control y estabilidad Incluye protector de disco para mayor seguridad",
+        "imagen":"/assets/taller/amoladora.webp"
+    },
+    {
+        "id":14,
+        "nombre":"Cepillo Electrico De Mano Gadnic Rebajador 82 Mm 650 W",
+        "categoria":"taller",
+        "precio":74949,
+        "descripcion":"    Voltaje: 220V Cepillado de 8.2cm de ancho x 2mm de profundidad. Motor de 650 watts de potencia. Seguridad garantizada por su sistema de bloqueo. Trae bolsa recolectora de polvo. Mejora rápidamente tus piezas logrando un acabado uniforme.",
+        "imagen":"/assets/taller/garlopa.webp"
+    },
+    {
+        "id":15,
+        "nombre":"Sierra Ingleteadora De 12 (305mm) Dewalt Dws715 Frecuencia 1 Rps",
+        "categoria":"taller",
+        "precio":111132    ,
+        "descripcion":"    Voltaje: 220V Potente motor de 1250W para cortes precisos y limpios Disco de 200mm y 40 dientes para acabado profesional Grados de inclinación de 0 y 45 para cortes en ángulo Capacidad de corte versátil: 50x120mm a 90° y 30x80mm a 45° Velocidad máxima de 4500 RPM sin carga Incluye accesorios: hoja de sierra, carbones, llaves y manual",
+        "imagen":"/assets/taller/ingletadora.webp"
+    },
+    {
+        "id":16,
+        "nombre":"Taladro Atornillador Percutor Batería 18v + Kit Accesorios ",
+        "categoria":"taller",
+        "precio":75828,
+        "descripcion":"    Voltaje: 220V Viene con maletín de transporte. Su frecuencia es de 50Hz. Incluye: 40 Puntas de 25mm",
+        "imagen":"/assets/taller/taladro.webp"
+    }
+]

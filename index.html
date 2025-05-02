@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>E-commerce</title>
+</head>
+<body>
+    <!-- navbar -->
+    <header>
+        <a href="#">
+            JHouse
+        </a>
+
+        <nav id="menu">
+            <a href="#about" id="aboutLink">About us</a>
+            <a href="#contacto" id="contactLink">Contacto</a>
+            <a href="#productos" id="productsLink">Productos</a>
+        </nav>
+
+
+        <form id="actions">
+            <button type="button" id="btnMenu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+            <button type="button" id="btnCart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart-icon lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+            </button>
+        </form>
+
+
+
+        <!-- carrito -->
+        <section id="carrito">
+            <header>
+                <h3>Carrito</h3>
+                <form>
+                    <button type="button" id="btnCloseCart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                    </button>
+                    <button type="button" id="btnClearCart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash-icon lucide-trash"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>
+                    </button>
+                </form>
+            </header>
+
+
+            
+            <ul id="items">
+                <li>
+                    <picture>
+                        <img src="assets/baño/atomizador.webp" alt="">
+                    </picture>
+                    
+                    <dl>
+                        <dt>Atomizador</dt>
+                        <dd>$50000</dd>
+                    </dl>
+
+                    <form class="form-carrito">
+                        <button type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus-icon lucide-minus"><path d="M5 12h14"/></svg>
+                        </button>
+
+                        <output>2</output>
+                        
+                        <button type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus-icon lucide-plus"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+                        </button>
+                    </form>
+                </li>
+                
+            </ul>
+
+            <article class="p">
+                <p>Subtotal <span id="subtotal">$250000</span></p>
+                <p>Envio <span id="envio">$5000</span></p>
+                <p>Total <span id="total">$255000</span></p>
+            </article>
+        </section>
+    </header>
+
+    <span id="overlay"></span>
+
+    <!-- Hero -->
+    <main id="hero">
+        <img src="assets/banner.webp" alt="" class="hero-img" />
+        <article>
+            <h2>Construimos los espacios el mañana</h2>
+            <h3>Descubri nuestros poductos para tu casa del futuro</h3>
+            <a href="#productos">Ver productos</a>
+        </article>
+    </main>
+    <!-- about -->
+    <section id="about">
+        <picture>
+            <img src="assets/Home.webp" alt="">
+        </picture>
+        <article>
+            <p>
+                En JHouse, llevamos años liderando la evolución de la tecnología y el estilo de vida.
+                Desde nuestros inicios, hemos estado comprometidos con una visión: acercarte al futuro
+                Creemos que el mañana no se espera, se construye. Por eso, seleccionamos productos que combinan innovación, diseño y funcionalidad, pensados para transformar tu día a día en algo extraordinario.
+                Hoy, con décadas de experiencia y una pasión intacta por lo que viene, te invitamos a ser parte de la nueva era.
+                El futuro ya está aquí, y empieza contigo.
+            </p>
+            <a href="http://instagram.com/j_house" target="_blank" rel="noopener noreferrer"></a>
+        </article>
+    </section>
+
+
+    <!-- productos -->
+    <section id="productos">
+        <header>
+            <h2>Nuestros Productos</h2>
+            <form>
+                <fieldset id="category">
+                    <label for="all">
+                        <input type="radio" id="all" name="category" value="all" checked>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text-icon lucide-file-text"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+                    </label>
+                    <label for="baño">
+                        <input type="radio" id="baño" name="category" value="baño">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-toilet-icon lucide-toilet"><path d="M7 12h13a1 1 0 0 1 1 1 5 5 0 0 1-5 5h-.598a.5.5 0 0 0-.424.765l1.544 2.47a.5.5 0 0 1-.424.765H5.402a.5.5 0 0 1-.424-.765L7 18"/><path d="M8 18a5 5 0 0 1-5-5V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8"/></svg>
+                    </label>
+                    <label for="cocina">
+                        <input type="radio" id="cocina" name="category" value="cocina">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cooking-pot-icon lucide-cooking-pot"><path d="M2 12h20"/><path d="M20 12v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8"/><path d="m4 8 16-4"/><path d="m8.86 6.78-.45-1.81a2 2 0 0 1 1.45-2.43l1.94-.48a2 2 0 0 1 2.43 1.46l.45 1.8"/></svg>
+                    </label>
+                    <label for="patio">
+                        <input type="radio" id="patio" name="category" value="patio">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flower-icon lucide-flower"><circle cx="12" cy="12" r="3"/><path d="M12 16.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 1 1 12 7.5a4.5 4.5 0 1 1 4.5 4.5 4.5 4.5 0 1 1-4.5 4.5"/><path d="M12 7.5V9"/><path d="M7.5 12H9"/><path d="M16.5 12H15"/><path d="M12 16.5V15"/><path d="m8 8 1.88 1.88"/><path d="M14.12 9.88 16 8"/><path d="m8 16 1.88-1.88"/><path d="M14.12 14.12 16 16"/></svg>
+                    </label>
+                    <label for="taller">
+                        <input type="radio" id="taller" name="category" value="taller">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hammer-icon lucide-hammer"><path d="m15 12-8.373 8.373a1 1 0 1 1-3-3L12 9"/><path d="m18 15 4-4"/><path d="m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172V7l-2.26-2.26a6 6 0 0 0-4.202-1.756L9 2.96l.92.82A6.18 6.18 0 0 1 12 8.4V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5"/></svg>
+                    </label>
+                </fieldset>
+            </form>
+        </header>
+        <ul id="catalogo">
+            <li data-category="baño" data-id="2">
+                <picture>
+                    <img src="assets/baño/atomizador.webp" alt="">
+                </picture>
+                <dl>
+                    <dt>Saphirus NBLCT-04 difusor digital aromatizador automatico 1 unidad</dt>
+                    <dd>Unidades por envase: 1Peso de la unidad: 300 g Unidades por pack: 1 Ideal para aromatizar tus interiores.</dd>
+                </dl>
+                <p> $21.515</p>
+                <form>
+                    <button type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart-icon lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                    </button>
+                </form>
+            </li>
+        </ul>
+    </section>
+
+
+    <!-- contactos -->
+    <section id="contacto">
+        <form action="" id="contact-form">
+            <fieldset>
+                <label for="name">Nombre</label>
+                <input type="name" id="name">
+                <small id="feedback_name"></small>
+            </fieldset>         
+            <fieldset>
+                <label for="email">Email</label>
+                <input type="email" id="email">
+                <small id="feedback_email"></small>
+            </fieldset>       
+            <fieldset>
+                <label for="message">Mensaje</label>
+                <textarea id="message"></textarea>
+                <small id="feedback_message"></small>
+            </fieldset>
+
+            <button type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send-horizontal-icon lucide-send-horizontal"><path d="M3.714 3.048a.498.498 0 0 0-.683.627l2.843 7.627a2 2 0 0 1 0 1.396l-2.842 7.627a.498.498 0 0 0 .682.627l18-8.5a.5.5 0 0 0 0-.904z"/><path d="M6 12h16"/></svg>
+            </button>
+
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; JHouse - Juan Martin | 2025</p>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pixelify+Sans:wght@400..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-inter);
+}
+
+:root {
+    --font-inter: "Inter", sans-serif;
+    --font-pixel: "Pixelify Sans", sans-serif;;
+    --color-fondo: #0d0d0d; /* Negro profundo */
+    --color-principal: #ff00ff; /* Magenta neón */
+    --color-secundario: #00ffff; /* Cian eléctrico */
+    --tr-principal: rgba(252, 116, 252, 0.4); /* Cian eléctrico */
+    --tr-secundario: rgba(116, 252, 252, 0.4); /* Cian eléctrico */
+    --color-acento: #ff6f00; /* Naranja intenso */
+    --color-texto: #e0e0e0; /* Gris muy claro para texto */
+    --tr-overlay: rgba(32, 4, 80,.9); /* overlay */
+    --color-header: rgb(32,4,80);
+    --color-borde: #5500ff; /* Azul violeta vibrante */
+  }
+
+
+
+html{
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--color-fondo);
+    scroll-padding-top: 6rem ;
+}
+body{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    @media screen and (max-width:768px) {
+        gap: 1rem;
+    }
+}
+
+#overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: var(--tr-texto);
+    z-index: 7;
+    backdrop-filter: blur(.4rem);
+    &.active{
+        display: flex;
+    }
+}
+
+button {
+    cursor: pointer;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}

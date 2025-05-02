@@ -1,0 +1,138 @@
+#productos{
+    display: flex;
+    flex-flow: row wrap;
+    padding-bottom: 2rem;
+    & header{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        padding-left: 1rem;
+        padding-right: 2rem;
+        padding-bottom: 1rem;
+        justify-content: space-between;
+        align-items:center;
+        & h2{
+            font-family: var(--font-pixel);
+            color: transparent;
+            background: linear-gradient(to bottom,var(--color-principal),var(--color-secundario));
+            background-clip: text;
+            text-transform: uppercase;
+            font-weight: 800;
+            font-size: 2rem;
+        }
+        & form{
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            & fieldset{
+                display: flex;
+                gap: 1rem;
+                border: none;
+                outline: none;
+            }
+            & label{
+                padding: .25rem .75rem;
+                color: var(--color-principal);
+                background: var(--color-header);
+                background-clip: text;
+                border: .1rem solid var(--color-principal);
+                box-shadow: 0 .4rem 1rem var(--tr-principal);
+                outline: none;
+                aspect-ratio: 1/1;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                transition: all 240ms ease-in-out;
+                & input{
+                    display: none;
+                }
+                &:has(input:checked){
+                    color: var(--color-texto);
+                    border-color: var(--color-texto);
+                }
+                & svg{
+                    width: 2rem;
+                    aspect-ratio: 1/1;
+                }
+            }
+        }
+    }
+
+    & #catalogo{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        padding: 1rem;
+        scroll-padding-top: 1rem;
+        gap: 1rem;
+        max-height: 75dvh;
+        overflow: auto;
+        scrollbar-width: none;
+        list-style: none;
+        & li{
+            width: calc(100% / 4 - 1rem);
+            /* height: fit-content; */
+            display: flex;
+            flex-flow: row wrap ;
+            justify-content: flex-start;
+            align-items: flex-start;
+            align-content: flex-start;
+            position: relative;
+            background-color: var(--tr-secundario);
+            border: .2rem solid var(--color-secundario);
+            box-shadow: 0 .4rem 1rem var(--color-secundario);
+            @media screen and (max-width:768px) {
+                width: calc(100% / 2 - 1rem);
+            }
+            @media screen and (max-width:480px) {
+                width: 100;
+            }
+            & picture{
+                width: 100%;
+                aspect-ratio: 1/1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                & img{
+                    object-fit: cover;
+                    object-position: top center;
+
+                }
+            }
+            & form{
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 6;
+            }
+            & dl{
+                width: 100%;
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                & dt{
+                    color: var(--color-texto);
+                    text-align: center;
+                }
+                & dd{
+                    color: var(--color-texto);
+                    text-align: center;
+                }
+            }
+            & p{
+                flex: 1;
+                width: 100%;
+                text-align: center;
+                color:var(--color-secundario);
+                font-size: 1.25rem;
+                text-shadow: 0 0 1rem var(--color-secundario);
+
+            }
+        }
+
+    }
+}

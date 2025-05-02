@@ -1,0 +1,95 @@
+#carrito{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    color: var(--color-fondo);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9;
+    background-color: var(--color-acento);
+    border: .2rem solid var(--color-fondo);
+    box-shadow: 0 .4rem 2rem var(--color-fondo);
+    backdrop-filter: blur(3rem);
+    transform: translateX(100%);
+    height: 100dvh ;
+    width: 25vw;
+    transition: all 240ms ease-in-out;
+    &.active{
+         transform: translateX(0);
+    }
+    @media screen and ( max-width:768px) {
+        width: 100vw;
+    }
+    & header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 1rem;
+        & form{
+            display: flex;
+            gap: 1rem;
+        }
+    }
+    & ul{
+        display: flex;
+        flex-direction: column;
+        max-height: 50dvh;
+        overflow: auto;
+        scrollbar-width: none;
+        gap: 1rem;
+        & li{
+            padding-bottom: 1rem;
+            border-bottom: 1px solid black;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+             & picture {
+                width: 9rem;
+                aspect-ratio: 1 / 1;
+                overflow: hidden;
+                background-color: var(--color-texto);
+                & img{
+                    object-fit: cover;
+                    object-position: top center;
+                }
+             }  
+             & form{
+                flex: 1;
+                display: flex;
+                gap: 1rem;
+                justify-content: flex-end;
+                align-items: center;
+                & button{
+                    border: .1rem solid transparent;
+                    background-color: transparent;
+                    width: 2rem;
+                    aspect-ratio: 1 / 1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: .25rem;
+                    transform: scale(.9);
+                    transition: all 240ms ease-in-out;
+                    &:hover{
+                        border-color: var(--color-fondo);
+                        transform: scale(1);
+                    }
+                }
+             }  
+        } 
+    }
+    & .p {
+        display: flex;
+        gap: 1rem;
+        font-size: large;
+    }
+    
+& .form-carrito {
+        font-size: large;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+}

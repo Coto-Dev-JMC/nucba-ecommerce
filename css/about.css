@@ -1,0 +1,28 @@
+#about{
+    width: 100%;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    & picture{
+        width: 50%;
+        aspect-ratio: 1/1;
+        display: flex;
+        align-self: stretch;
+        @media screen and (max-width:768px) {
+        width: calc(100% - 1rem);
+        }
+    }
+    & article{
+        width: 100%;
+        max-width: 480px;
+        padding: 1rem;
+        background-color: var(--tr-principal);
+        color: var(--color-texto);
+        border: .2rem solid var(--color-principal);
+        box-shadow: 0 .4rem 1rem var(--color-texto);
+    }
+
+}
