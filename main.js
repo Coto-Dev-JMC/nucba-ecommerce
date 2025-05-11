@@ -111,7 +111,7 @@ const renderCart = () => {
     currency: "ARS",
   });
 
-  let valueSubtotal = cart.reduce((valorPrevio, itemActual) => {
+  let valueSubtotal = items.reduce((valorPrevio, itemActual) => {
     return (valorPrevio += itemActual.precio * itemActual.cantidad);
   }, 0);
   let valueShipping = valueSubtotal < 200000 ? valueSubtotal * 0.2 : 0;
@@ -124,7 +124,7 @@ const renderCart = () => {
   }
   total.innerHTML = moneda.format(valueShipping + valueSubtotal);
 
-  cart.forEach((itemCart) => itemsCart.append(item(itemCart)));
+  items.forEach((itemCart) => itemsCart.append(item(itemCart)));
 };
 
 const item = (itemCart) => {
